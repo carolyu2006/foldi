@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Face",
+        "author": "Carol",
+        "link": "https://carolyuuu.com/",
+        "tags": ["cute", "funny", "creative"],
+        "icons": [
+            "face_1.png",
+            "face_2.png",
+            "face_3.png",
+            "face_4.png",
+            "face_5.png",
+            "face_6.png"
+        ]
+    },
+    {
+        "name": "Glass",
+        "author": "Carol",
+        "link": "https://carolyuuu.com/",
+        "tags": ["clean", "clear", "art"],
+        "icons": [
+            "glass_1.png",
+            "glass_2.png",
+            "glass_3.png",
+            "glass_4.png",
+            "glass_5.png",
+            "glass_6.png"
+        ]
+    }
+]
