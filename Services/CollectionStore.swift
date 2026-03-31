@@ -66,6 +66,18 @@ final class CollectionStore {
 
         let item = CollectionItem(id: id, name: name, groupID: groupID, imagePath: filename)
         items.append(item)
+
+        // Keep only the most recent 30 items
+        let maxItems = 20
+        if items.count > maxItems {
+            let toRemove = items.prefix(items.count - maxItems)
+            for old in toRemove {
+                let oldURL = imagesDir.appendingPathComponent(old.imagePath)
+                try? FileManager.default.removeItem(at: oldURL)
+            }
+            items.removeFirst(items.count - maxItems)
+        }
+
         save()
         return item
     }

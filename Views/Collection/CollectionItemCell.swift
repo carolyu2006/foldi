@@ -5,10 +5,11 @@ import UniformTypeIdentifiers
 struct CollectionItemCell: View {
     var store: CollectionStore
     var item: CollectionItem
+    var onTap: ((NSImage) -> Void)? = nil
     @State private var isHovering = false
 
     var body: some View {
-        VStack(spacing: 4) {
+        let cellContent = Group {
             if let img = store.image(for: item) {
                 Image(nsImage: img)
                     .resizable()
@@ -23,17 +24,25 @@ struct CollectionItemCell: View {
                             .foregroundStyle(.secondary)
                     }
             }
-
-            Text(item.name)
-                .font(.caption2)
-                .lineLimit(1)
-                .truncationMode(.middle)
         }
         .padding(6)
         .background(
             RoundedRectangle(cornerRadius: 8)
                 .fill(isHovering ? Color.secondary.opacity(0.1) : Color.clear)
         )
+
+        Group {
+            if let onTap {
+                Button {
+                    if let img = store.image(for: item) { onTap(img) }
+                } label: {
+                    cellContent
+                }
+                .buttonStyle(.plain)
+            } else {
+                cellContent
+            }
+        }
         .onHover { isHovering = $0 }
         .draggable(TransferableFileURL(url: store.fileURL(for: item)))
         .contextMenu {

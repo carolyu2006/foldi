@@ -3,7 +3,7 @@
         "name": "Tales",
         "author": "Popopo",
         "link": "https://www.xiaohongshu.com/user/profile/5d19677d000000001200a4de?xsec_token=YBsQ3I3UCumQAKu66UqRghzsdKD4BMeWJx48xG_nbJRcw=&xsec_source=app_share&xhsshare=CopyLink&shareRedId=N0ozQ0c8Sko2NzUyOTgwNjc1OTg8PUs5&apptime=1774119651&share_id=68da42749a124c718c036edfafccf478",
-        "tags": ["cute", "funny", "creative"],
+        "tags": ["colorful", "creative", "cute", "fancy", "pretty"],
         "icons": [
             "tales1.PNG",
             "tales2.PNG",
@@ -19,7 +19,7 @@
         "name": "Apple",
         "author": "Popopo",
         "link": "https://www.xiaohongshu.com/user/profile/5d19677d000000001200a4de?xsec_token=YBsQ3I3UCumQAKu66UqRghzsdKD4BMeWJx48xG_nbJRcw=&xsec_source=app_share&xhsshare=CopyLink&shareRedId=N0ozQ0c8Sko2NzUyOTgwNjc1OTg8PUs5&apptime=1774119651&share_id=68da42749a124c718c036edfafccf478",
-        "tags": ["cute", "funny", "creative"],
+        "tags": ["apple", "cute", "creative", "fruit", "red"],
         "icons": [
             "apple1.png",
             "apple2.png",
@@ -33,24 +33,10 @@
         ]
     },
     {
-        "name": "Face",
-        "author": "Carol",
-        "link": "https://carolyuuu.com/",
-        "tags": ["cute", "funny", "creative"],
-        "icons": [
-            "face_1.png",
-            "face_2.png",
-            "face_3.png",
-            "face_4.png",
-            "face_5.png",
-            "face_6.png"
-        ]
-    },
-    {
         "name": "Glass",
         "author": "Carol",
         "link": "https://carolyuuu.com/",
-        "tags": ["clean", "clear", "art"],
+        "tags": ["color", "emoji", "glass", "clean"],
         "icons": [
             "glass_1.png",
             "glass_2.png",
@@ -58,6 +44,43 @@
             "glass_4.png",
             "glass_5.png",
             "glass_6.png"
+        ]
+    },
+    {
+        "name": "Default",
+        "author": "Carol",
+        "link": "https://carolyuuu.com/",
+        "tags": ["simple", "default", "apple", "clean", "folder"],
+        "icons": [
+            "default-blue.png",
+            "default-green1.png",
+            "default-green2.png",
+            "default-yellow.png",
+            "default-orange.png",
+            "default-red.png",
+            "default-pink.png",
+            "default-purple.png",
+            "default-blue2.png",
+            "default-white.png",
+            "default-grey.png",
+            "default-black.png"
+        ]
+    },
+    {
+        "name": "Gradient",
+        "author": "Carol",
+        "link": "https://carolyuuu.com/",
+        "tags": ["simple", "default", "apple", "clean", "folder", "gradient"],
+        "icons": [
+            "gradient-blue.png",
+            "gradient-green1.png",
+            "gradient-green2.png",
+            "gradient-yellow.png",
+            "gradient-orange.png",
+            "gradient-red.png",
+            "gradient-pink.png",
+            "gradient-purple.png",
+            "gradient-blue2.png"
         ]
     }
 ]
